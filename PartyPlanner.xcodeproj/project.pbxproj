@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C7DD5F42737F37100F66BD2 /* NewEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7DD5F32737F37100F66BD2 /* NewEvent.swift */; };
-		1C7DD5F62737F38C00F66BD2 /* UpcomingEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7DD5F52737F38C00F66BD2 /* UpcomingEvent.swift */; };
-		1C7DD5F82737F58E00F66BD2 /* PastEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7DD5F72737F58E00F66BD2 /* PastEvents.swift */; };
+		1C7DD5FC273820D200F66BD2 /* NewFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7DD5FB273820D200F66BD2 /* NewFriendsView.swift */; };
+		1C7DD5FE2738213800F66BD2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7DD5FD2738213800F66BD2 /* SettingsView.swift */; };
 		1C8E08E12736926C00BC520F /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E08E02736926C00BC520F /* PageControl.swift */; };
 		1C8E08E32736A64800BC520F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E08E22736A64800BC520F /* HomeView.swift */; };
 		1C8E08E72737227E00BC520F /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E08E62737227E00BC520F /* HomeScreen.swift */; };
@@ -27,9 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1C7DD5F32737F37100F66BD2 /* NewEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewEvent.swift; sourceTree = "<group>"; };
-		1C7DD5F52737F38C00F66BD2 /* UpcomingEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEvent.swift; sourceTree = "<group>"; };
-		1C7DD5F72737F58E00F66BD2 /* PastEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastEvents.swift; sourceTree = "<group>"; };
+		1C7DD5FB273820D200F66BD2 /* NewFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFriendsView.swift; sourceTree = "<group>"; };
+		1C7DD5FD2738213800F66BD2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		1C8E08E02736926C00BC520F /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		1C8E08E22736A64800BC520F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1C8E08E62737227E00BC520F /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -87,9 +85,8 @@
 				1C8E08E22736A64800BC520F /* HomeView.swift */,
 				1CB894A827365D410038D97D /* PageView.swift */,
 				1C8E08E62737227E00BC520F /* HomeScreen.swift */,
-				1C7DD5F72737F58E00F66BD2 /* PastEvents.swift */,
-				1C7DD5F52737F38C00F66BD2 /* UpcomingEvent.swift */,
-				1C7DD5F32737F37100F66BD2 /* NewEvent.swift */,
+				1C7DD5FD2738213800F66BD2 /* SettingsView.swift */,
+				1C7DD5FB273820D200F66BD2 /* NewFriendsView.swift */,
 				1CB89493273653580038D97D /* Assets.xcassets */,
 				1CB89498273653580038D97D /* Persistence.swift */,
 				1CB8949A273653580038D97D /* PartyPlanner.xcdatamodeld */,
@@ -180,13 +177,12 @@
 				1CB894A927365D410038D97D /* PageView.swift in Sources */,
 				1C8E08E927372C9600BC520F /* LoginClass.swift in Sources */,
 				1C8E08E12736926C00BC520F /* PageControl.swift in Sources */,
-				1C7DD5F62737F38C00F66BD2 /* UpcomingEvent.swift in Sources */,
 				1C8E08E32736A64800BC520F /* HomeView.swift in Sources */,
 				1C8E08E72737227E00BC520F /* HomeScreen.swift in Sources */,
-				1C7DD5F42737F37100F66BD2 /* NewEvent.swift in Sources */,
 				1CB894A727365BB00038D97D /* PageViewController.swift in Sources */,
+				1C7DD5FE2738213800F66BD2 /* SettingsView.swift in Sources */,
 				1CB8949C273653580038D97D /* PartyPlanner.xcdatamodeld in Sources */,
-				1C7DD5F82737F58E00F66BD2 /* PastEvents.swift in Sources */,
+				1C7DD5FC273820D200F66BD2 /* NewFriendsView.swift in Sources */,
 				1CB89492273653560038D97D /* ContentView.swift in Sources */,
 				1CB894A5273658750038D97D /* OnboardingCardView.swift in Sources */,
 				1CB894A32736562F0038D97D /* OnboardingCard.swift in Sources */,

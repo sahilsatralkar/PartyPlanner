@@ -10,12 +10,12 @@ import SwiftUI
 //Class to handle the quick action selection
 class SelectedTab : ObservableObject {
     // v.1.4.1
-    @Published var tabNumber : TabIdentifier = TabIdentifier.NewEvent
+    @Published var tabNumber : TabIdentifier = TabIdentifier.NewFriend
     
 }
 
 enum TabIdentifier: Hashable {
-    case NewEvent, UpcomingEvents, PastEvents
+    case NewFriend, Settings
 }
 
 
@@ -27,25 +27,19 @@ struct HomeScreen: View {
         
         TabView(selection: $selectedTabEnv.tabNumber) {
             
-            NewEvent()
+            NewFriendsView()
                 .tabItem {
-                    Image(systemName: "goforward.plus")
-                    Text("New Event")
+                    Image(systemName: "person.crop.circle.badge.plus")
+                    Text("Add Friend")
                 }
-                .tag(TabIdentifier.NewEvent)
+                .tag(TabIdentifier.NewFriend)
             
-            UpcomingEvent()
+            SettingsView()
                 .tabItem {
-                    Image(systemName: "exclamationmark.circle")
-                    Text("Upcoming Events")
+                    Image(systemName: "gear")
+                    Text("Settings")
                 }
-                .tag(TabIdentifier.UpcomingEvents)
-            PastEvents()
-                .tabItem {
-                    Image(systemName: "gobackward")
-                    Text("Past Events")
-                }
-                .tag(TabIdentifier.PastEvents)
+                .tag(TabIdentifier.Settings)
         }
     }
 }
