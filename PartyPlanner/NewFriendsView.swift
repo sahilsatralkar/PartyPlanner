@@ -11,42 +11,61 @@ struct NewFriendsView: View {
     
     @State private var showingAddFriend = false
     
+    @Environment(\.managedObjectContext) var moc
+    
+    var fetchRequest = FetchRequest<FriendsEntity>(entity: FriendsEntity.entity(), sortDescriptors : [NSSortDescriptor(keyPath: \FriendsEntity.date, ascending: false)])
+    
     var body: some View {
         NavigationView {
-            List{
-                Section {
-                ForEach (0 ..< 10) { index in
-                    NavigationLink(destination: Text("Friend No. \(index)")) {
-                        VStack {
-                            Text("Friend No. \(index)")
+            Form {
+                Section (header: Text("Tap on + to add New")) {
+                    List {
+                        ForEach(fetchRequest.wrappedValue, id:\.self) { friend in
+                    
+                            VStack {
+                                HStack{
+                                    Image(systemName: "person.crop.circle.fill")
+                                        .foregroundColor(.green)
+                                    Text(friend.name ?? "")
+                                        .font(.title)
+                                    Spacer()
+                                }
+                                HStack {
+                                    Image(systemName: "heart.circle.fill")
+                                        .foregroundColor(.red)
+                                    Text("Hobby: \(friend.hobby ?? "")")
+                                        .font(.body)
+                                    Spacer()
+                                }
+                            }
                         }
-                        
+                        .onDelete(perform: delete)
                     }
                 }
-                }
-                //
-                .navigationTitle("Friends")
-                .navigationBarItems(trailing: HStack {
-                    Button(action :
-                            {
-                        self.showingAddFriend = true
-                        
-                    })
-                    {
-                        Image(systemName: "plus")
-                        
-                    }
-                }
-                )
             }
-            .listStyle(.plain)
+            .navigationTitle("Friends & Hobbies")
+            .navigationBarItems(trailing: HStack {
+                Button(action :
+                        {
+                    self.showingAddFriend = true
+                })
+                {
+                    Image(systemName: "plus")
+                }
+            }
+            )
             .sheet(isPresented: $showingAddFriend){
                 AddFriendView()
-                
             }
         }
-        
-        
+    }
+    //Function to remove individual items
+    func delete( at offsets : IndexSet) {
+        for offset in offsets {
+            let note = self.fetchRequest.wrappedValue[offset]
+            moc.delete(note)
+        }
+        try? moc.save()
     }
 }
 

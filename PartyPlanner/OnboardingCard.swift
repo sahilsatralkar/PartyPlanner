@@ -16,9 +16,9 @@ struct OnboardingCard: Identifiable {
 }
 
 var cards : [OnboardingCard] = [
-    OnboardingCard(image: "image1", title: "Title 1", description: "This is the first screen"),
-    OnboardingCard(image: "image2", title: "Title 2", description: "This is the second screen"),
-    OnboardingCard(image: "image3", title: "Title 3", description: "This is the third screen")
+    OnboardingCard(image: "image4", title: "Friends & Hobbies", description: "Know your friends better!"),
+    OnboardingCard(image: "image4", title: "Easy to navigate", description: "Easy and convineint list of Friends hobbies"),
+   // OnboardingCard(image: "image4", title: "Title 3", description: "This is the third screen")
 ]
     
 
