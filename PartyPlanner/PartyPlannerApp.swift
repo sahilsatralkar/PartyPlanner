@@ -10,11 +10,16 @@ import SwiftUI
 @main
 struct PartyPlannerApp: App {
     let persistenceController = PersistenceController.shared
+    
+    @StateObject private var selectedTabObj = SelectedTab()
+    @StateObject private var loginClass = LoginClass(loginState: false)
 
     var body: some Scene {
         WindowGroup {
-            ContentView(isLoginActive: LoginClass.init(loginState: false))
+            ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(selectedTabObj)
+                .environmentObject(loginClass)
         }
     }
 }

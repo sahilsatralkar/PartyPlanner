@@ -16,7 +16,7 @@ struct ContentView: View {
     @State var isOnboarding = false
     @State private var animationAmount = 1.0
     
-    @ObservedObject var isLoginActive : LoginClass
+    @EnvironmentObject var isLoginActive : LoginClass
     
     var body: some View {
         Group {
@@ -48,6 +48,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView(isLoginActive: LoginClass(loginState: false))
+        ContentView()
     }
 }

@@ -15,3 +15,5 @@ class LoginClass : ObservableObject {
     }
     @Published var loginState : Bool = false
 }
+
+
