@@ -21,6 +21,7 @@ struct NewFriendsView: View {
                     }
                 }
                 }
+                //
                 .navigationTitle("Friends")
                 .navigationBarItems(trailing: HStack {
                     Button(action :
