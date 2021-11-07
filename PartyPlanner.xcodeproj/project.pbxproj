@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1C7DD5FC273820D200F66BD2 /* NewFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7DD5FB273820D200F66BD2 /* NewFriendsView.swift */; };
 		1C7DD5FE2738213800F66BD2 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7DD5FD2738213800F66BD2 /* SettingsView.swift */; };
+		1C7DD6002738435000F66BD2 /* FriendInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7DD5FF2738435000F66BD2 /* FriendInfo.swift */; };
+		1C7DD604273844B400F66BD2 /* FetchContacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7DD603273844B400F66BD2 /* FetchContacts.swift */; };
+		1C7DD607273848AB00F66BD2 /* AddFriendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7DD606273848AB00F66BD2 /* AddFriendView.swift */; };
+		1C7DD609273849C600F66BD2 /* AddFriendContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7DD608273849C600F66BD2 /* AddFriendContactView.swift */; };
 		1C8E08E12736926C00BC520F /* PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E08E02736926C00BC520F /* PageControl.swift */; };
 		1C8E08E32736A64800BC520F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E08E22736A64800BC520F /* HomeView.swift */; };
 		1C8E08E72737227E00BC520F /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8E08E62737227E00BC520F /* HomeScreen.swift */; };
@@ -28,6 +32,11 @@
 /* Begin PBXFileReference section */
 		1C7DD5FB273820D200F66BD2 /* NewFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewFriendsView.swift; sourceTree = "<group>"; };
 		1C7DD5FD2738213800F66BD2 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1C7DD5FF2738435000F66BD2 /* FriendInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendInfo.swift; sourceTree = "<group>"; };
+		1C7DD603273844B400F66BD2 /* FetchContacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchContacts.swift; sourceTree = "<group>"; };
+		1C7DD6052738459B00F66BD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		1C7DD606273848AB00F66BD2 /* AddFriendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendView.swift; sourceTree = "<group>"; };
+		1C7DD608273849C600F66BD2 /* AddFriendContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFriendContactView.swift; sourceTree = "<group>"; };
 		1C8E08E02736926C00BC520F /* PageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControl.swift; sourceTree = "<group>"; };
 		1C8E08E22736A64800BC520F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1C8E08E62737227E00BC520F /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
@@ -75,6 +84,7 @@
 		1CB8948E273653560038D97D /* PartyPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				1C7DD6052738459B00F66BD2 /* Info.plist */,
 				1CB8948F273653560038D97D /* PartyPlannerApp.swift */,
 				1CB89491273653560038D97D /* ContentView.swift */,
 				1C8E08E827372C9600BC520F /* LoginClass.swift */,
@@ -87,6 +97,10 @@
 				1C8E08E62737227E00BC520F /* HomeScreen.swift */,
 				1C7DD5FD2738213800F66BD2 /* SettingsView.swift */,
 				1C7DD5FB273820D200F66BD2 /* NewFriendsView.swift */,
+				1C7DD5FF2738435000F66BD2 /* FriendInfo.swift */,
+				1C7DD603273844B400F66BD2 /* FetchContacts.swift */,
+				1C7DD606273848AB00F66BD2 /* AddFriendView.swift */,
+				1C7DD608273849C600F66BD2 /* AddFriendContactView.swift */,
 				1CB89493273653580038D97D /* Assets.xcassets */,
 				1CB89498273653580038D97D /* Persistence.swift */,
 				1CB8949A273653580038D97D /* PartyPlanner.xcdatamodeld */,
@@ -180,13 +194,17 @@
 				1C8E08E32736A64800BC520F /* HomeView.swift in Sources */,
 				1C8E08E72737227E00BC520F /* HomeScreen.swift in Sources */,
 				1CB894A727365BB00038D97D /* PageViewController.swift in Sources */,
+				1C7DD604273844B400F66BD2 /* FetchContacts.swift in Sources */,
 				1C7DD5FE2738213800F66BD2 /* SettingsView.swift in Sources */,
 				1CB8949C273653580038D97D /* PartyPlanner.xcdatamodeld in Sources */,
 				1C7DD5FC273820D200F66BD2 /* NewFriendsView.swift in Sources */,
 				1CB89492273653560038D97D /* ContentView.swift in Sources */,
 				1CB894A5273658750038D97D /* OnboardingCardView.swift in Sources */,
+				1C7DD607273848AB00F66BD2 /* AddFriendView.swift in Sources */,
 				1CB894A32736562F0038D97D /* OnboardingCard.swift in Sources */,
 				1CB89490273653560038D97D /* PartyPlannerApp.swift in Sources */,
+				1C7DD6002738435000F66BD2 /* FriendInfo.swift in Sources */,
+				1C7DD609273849C600F66BD2 /* AddFriendContactView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +338,9 @@
 				DEVELOPMENT_TEAM = HP6WDMAW63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PartyPlanner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -349,6 +370,9 @@
 				DEVELOPMENT_TEAM = HP6WDMAW63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PartyPlanner/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct NewFriendsView: View {
+    
+    @State private var showingAddFriend = false
+    
     var body: some View {
         NavigationView {
             List{
@@ -26,7 +29,7 @@ struct NewFriendsView: View {
                 .navigationBarItems(trailing: HStack {
                     Button(action :
                             {
-                        //
+                        self.showingAddFriend = true
                         
                     })
                     {
@@ -37,6 +40,10 @@ struct NewFriendsView: View {
                 )
             }
             .listStyle(.plain)
+            .sheet(isPresented: $showingAddFriend){
+                AddFriendView()
+                
+            }
         }
         
         
