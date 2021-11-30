@@ -1,0 +1,28 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-partyplanner-dev-194555-authRole",
+      "UnauthRoleArn": "arn:aws:iam::168329747381:role/amplify-partyplanner-dev-194555-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::168329747381:role/amplify-partyplanner-dev-194555-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-partyplanner-dev-194555-deployment",
+      "UnauthRoleName": "amplify-partyplanner-dev-194555-unauthRole",
+      "StackName": "amplify-partyplanner-dev-194555",
+      "StackId": "arn:aws:cloudformation:us-east-1:168329747381:stack/amplify-partyplanner-dev-194555/0b062f60-51e8-11ec-92ee-12eb32005ceb",
+      "AmplifyAppId": "dvgty5jvm8tgd"
+    }
+  },
+  "partyplan": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-partyplanner-partyplan-200143-authRole",
+      "UnauthRoleArn": "arn:aws:iam::168329747381:role/amplify-partyplanner-partyplan-200143-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::168329747381:role/amplify-partyplanner-partyplan-200143-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-partyplanner-partyplan-200143-deployment",
+      "UnauthRoleName": "amplify-partyplanner-partyplan-200143-unauthRole",
+      "StackName": "amplify-partyplanner-partyplan-200143",
+      "StackId": "arn:aws:cloudformation:us-east-1:168329747381:stack/amplify-partyplanner-partyplan-200143/3fcd0280-51ea-11ec-a3b1-0a494b6818d5",
+      "AmplifyAppId": "dvgty5jvm8tgd"
+    }
+  }
+}
